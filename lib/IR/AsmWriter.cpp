@@ -2642,6 +2642,8 @@ void AssemblyWriter::printModule(const Module *M) {
   // Output global use-lists.
   printUseLists(nullptr);
 
+  Out << "\n\n EXTRA INFORMATION : AMAN ARYAN 20111009 \n\n";
+  
   // Output all of the functions.
   for (const Function &F : *M)
     printFunction(&F);
